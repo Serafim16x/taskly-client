@@ -33,7 +33,7 @@ export default function SignUp() {
       
       const data = await res.json();
 
-      if (res.res.status === 200) { 
+      if (res.status === 200) { 
         toast.success('Регистрация прошла успешно. Вы вошли в систему');
         updateUser(data); 
         navigate('/profile'); 
